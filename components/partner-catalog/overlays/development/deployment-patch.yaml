@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/wanhuatong-tenant/partner-catalog/partner-catalog@sha256:d8d3aad29c2e4ce16259b8e0264b60c9c1a299139456b987ae71f1b5aed2229b
+        name: my-java-springboot
+        resources: {}
+status: {}
